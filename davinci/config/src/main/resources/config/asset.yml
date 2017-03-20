@@ -1,0 +1,27 @@
+asset:
+  model:
+    person: 1
+    assets: 2
+    
+spring:
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: true
+      dialect: org.hibernate.dialect.H2Dialect
+  datasource:
+    url: jdbc:h2:file:~/zhaomin/Work Place/h2-database/h2
+    username: sa
+    password: sa
+    driverClassName: org.h2.Driver
+    
+  thymeleaf:
+    prefix: classpath:/thymeleaf/
+    suffix: .html
+    model: HTML5
+    encoding: UTF-8
+    content-type: text/html
+    cache: false
+        
+
+      
